@@ -64,18 +64,26 @@
     	<section class="interesting">
     		<h2>Заинтересовались?</h2>
     		<p class="interesting-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостниц в седоне</p>
-    		<form class="search-hotels" action="https://echo.htmlacademy.ru" method="get">
+    		<form class="search-hotels" action="https://echo.htmlacademy.ru" method="post">
                 <h3 class="search-head">Поиск гостиницы в Седоне</h3>
-                <label class="search-input">
-                    <p>Дата заезда:</p>
-                    <input type="text" method="post" id="total=field" value="24 апреля 2017">
+                <label>
+                    <span class="search-hotels-form-fords">Дата заезда:</span>
+                    <input class="search-input" type="text" value="24 апреля 2017">
                     <span class="button-calendar"><!-- конпка календаря--></span>   
-                </label>
-                <label class="search-input">
-                    <p>Дата выезда:</p>
-                    <input type="text" method="post" id="total=field" value="4 июля 2017">
+                </label><br>
+                <label>
+                    <span class="search-hotels-form-fords">Дата выезда:</span>
+                    <input class="search-input" type="text" value="4 июля 2017">
                     <span class="button-calendar"><!-- конпка календаря--></span>   
+                </label><br>
+                <label >
+                    <span class="search-hotels-form-fords">Взрослые:</span>
+                    <!-- class="search-quantity" выбор кол-ва -->
                 </label>
+                <label >
+                    <span class="search-hotels-form-fords">Дети:</span>
+                    <!-- class="search-quantity" выбор кол-ва -->
+                </label><br>
                 <input class="button-search" type="submit" value="найти">
             </form>
     		<div class="map">

@@ -17,8 +17,69 @@
 		</nav>
   	</header>
     <main class="main-content">
-        <section class="filter-check">
+        <section class="filter-hotels">
             <!-- форма-фильтр инфраструктура, тип жилья и стоймость -->
+            <form class="filter-hotels-check" method="post">
+                <div class="filter-infrastructure">
+                    <ul class="infrastructure-check">
+                        <label>
+                        <h3>Инфраструктура:</h3>
+                            <li>
+                                <label>
+                                    <input class="check-variant" type="checkbox" checked>
+                                    <span class="check-variant-name">Бассейн</span> 
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="check-variant" type="checkbox">
+                                    <span class="check-variant-name">Парковка</span> 
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="check-variant" type="checkbox">
+                                    <span class="check-variant-name">Wi-Fi</span> 
+                                </label>
+                            </li>
+                        </label>
+                    </ul>    
+                </div>
+                <div class="filter-infrastructure">
+                    <ul class="infrastructure-check">
+                        <label>
+                            <h3>Тип жилья:</h3>
+                            <li>
+                                <label>
+                                    <input class="check-variant" type="checkbox" checked>
+                                    <span class="check-variant-name">Гостиница</span> 
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="check-variant" type="checkbox" checked>
+                                    <span class="check-variant-name">Мотель</span> 
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="check-variant" type="checkbox" checked>
+                                    <span class="check-variant-name">Апартаменты</span> 
+                                </label>
+                            </li>
+                        </label>
+                    </ul>    
+                </div>
+                <div class="filter-infrastructure">
+                    <label>
+                        <h3>Стоимость в сутки (Р):</h3>
+                        <span class="filter-price">
+                            <!-- стоимость от и до, полузонок -->
+                        </span>
+                    </label>   
+                </div>
+
+            </form>
         </section> 
         <section class="filter-hotels">
             <!-- форма-фильтр по найденым отелям -->

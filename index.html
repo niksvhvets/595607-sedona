@@ -64,7 +64,20 @@
     	<section class="interesting">
     		<h2>Заинтересовались?</h2>
     		<p class="interesting-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостниц в седоне</p>
-    		<!-- Здесь форма -->
+    		<form class="search-hotels" action="https://echo.htmlacademy.ru" method="get">
+                <h3 class="search-head">Поиск гостиницы в Седоне</h3>
+                <label class="search-input">
+                    <p>Дата заезда:</p>
+                    <input type="text" method="post" id="total=field" value="24 апреля 2017">
+                    <span class="button-calendar"><!-- конпка календаря--></span>   
+                </label>
+                <label class="search-input">
+                    <p>Дата выезда:</p>
+                    <input type="text" method="post" id="total=field" value="4 июля 2017">
+                    <span class="button-calendar"><!-- конпка календаря--></span>   
+                </label>
+                <input class="button-search" type="submit" value="найти">
+            </form>
     		<div class="map">
     			<img src="http://placehold.it/150x100" width="150" height="100" alt="карта"> <!-- если карта статичная картинка-->
     			<!-- Здесь форма интерактивной карты, если карта не статичная картинка -->

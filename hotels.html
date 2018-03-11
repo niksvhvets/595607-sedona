@@ -6,11 +6,11 @@
 </head>
 <body bgcolor="#f2f2f2">
  <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation" aria-label="навигация по сайту">
      <ul class="site-navigaton">
         <li><a href="#">ИНФОРМАЦИЯ</a></li>
         <li><a href="#">ФОТО И ВИДЕО</a></li>
-        <li><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Седона"></a></li>
+        <li><a href="index.html" aria-label="Главная страница"><img src="img/logo.png " width="138" height="70" alt="Логотип Седона"></a></li>
         <li><a href="#">КАРТА ШТАТА</a></li>
         <li><a>ГОСТИНИЦЫ</a></li>
     </ul>
@@ -18,9 +18,73 @@
 </header>
 <main class="main-content">
     <section class="hotels-filter">
-        <div class="img-filters">
-            <img src="img/img-filters.jpg" width="1200" height="562" alt="фильтры">
-        </div>
+        <form class="hotels-form" oninput="rangemin.value=rangeprice.value" action="https://echo.htmlacademy.ru" method="post" aria-label="форма выбора фильтров">
+            <div class="img-filters">
+                <img src="img/img-filters.jpg" width="1200" height="562" alt="фильтры">
+            </div>
+            <fieldset class="infrastructure-filters">
+                <legend class="filters-name">Инфраструктура:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="pool" checked/>
+                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                <span class="type-name">Бассейн</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="parking"/>
+                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                <span class="type-name">Парковка</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="Wi-Fi"/>
+                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                <span class="type-name">Wi-Fi</span>
+                            </label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <fieldset class="type-filters">
+                <legend class="filters-name">Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="hotel" checked/>
+                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                <span class="type-name">Гостиница</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="motel" checked/>
+                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                <span class="type-name">Мотель</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="apartment" checked/>
+                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                <span class="type-name">Апартаменты</span>
+                            </label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <label for="rangeprice">
+                <span class="filters-name">Стоимость в сутки (P):</span><br>
+                <span class="table-price">
+                         0
+                    <output name="rangemin" id="rangemin">3000</output><br>   
+                </span>
+                <input class="range-price" id="rangeprice" type="range" min="0" max="4000" step="100" value="3000" name="price"/>
+                <span class="range-indicator"><!-- картинка рэнжа --></span>
+            </label><br>   
+            <input class="button-show" type="submit" value="Показать" aria-label="показать результат">
+        </form>
     </section> 
     <section class="hotels-filter">
         <div class="hotels-found">
@@ -28,27 +92,21 @@
             <h4>Сортировка:</h4>
             <ul class="hotels-found-sort">            
                 <li class="hotels-found-sort-choose">
-                    <button class="button-price" type="button">
-                        <a href="#">по цене</a>
-                    </button>
+                    <button class="button-price" type="button" aria-label="сортировка по цене">по цене</button>
                 </li>
                 <li class="hotels-found-sort-choose">
-                    <button class="button-type" type="button">
-                        <a href="#">по типу</a>
-                    </button>
+                    <button class="button-type" type="button" aria-label="сортировка по типу">по типу</button>
                 </li>
                 <li class="hotels-found-sort-choose">
-                    <button class="button-rating" type="button">
-                        <a href="#">по рейтингу</a>
-                    </button>
+                    <button class="button-rating" type="button" aria-label="сортировка по рейтингу">по рейтингу</button>                 
                 </li>
                 <li class="hotels-found-sort-up">
-                    <button class="button-up" type="button">
+                    <button class="button-up" type="button" aria-label="">
                         <img src="img/icon-up-dir.svg" width="11" height="10" alt="поднять">
                     </button>
                 </li>
                 <li class="hotels-found-sort-down">
-                    <button class="button-down" type="button">
+                    <button class="button-down" type="button" aria-label="">
                         <img src="img/icon-down-dir.svg" width="11" height="10" alt="поднять">
                     </button>
                 </li>
@@ -81,7 +139,7 @@
                 </li>
                 <li class="hotels-catalog-item">
                     <div>
-                        <img src="img/desert.jpg" width="135" height="90 alt="Desert Quail Inn">
+                        <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
                     </div>
                     <h3 class="hotels-title">
                         <a href="#">Desert Quail Inn</a>
@@ -131,13 +189,13 @@
         #VISITSEDONA
     </a>
     <div class="footer-social">
-        <a class="social-button" href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter">Твиттер</a>
-        <a class="social-button" href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook">Фейсбук</a>
-        <a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube">Ютуб</a>
+        <a class="social-button" href="#" aria-label="Твиттер"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a>
+        <a class="social-button" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook"></a>
+        <a class="social-button" href="#" aria-label="Ютуб"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
     </div>
     <p class="footer-copyright">
       <b>WEBSITE BY</b>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Интенсив HTMLAcademy">
        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy">
    </a>
 </p>

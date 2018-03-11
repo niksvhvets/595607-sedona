@@ -6,16 +6,14 @@
 </head>
 <body bgcolor="#f2f2f2">
    <header class="main-header">
-    <nav class="main-navigation"> 
+    <nav class="main-navigation" aria-label="навигация по сайту"> 
       <ul class="site-navigaton">
         <li><a href="#">ИНФОРМАЦИЯ</a></li>
         <li><a href="#">ФОТО И ВИДЕО</a></li>
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-      </a>
-      <li><a href="#">КАРТА ШТАТА</a></li>
-      <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
-  </ul>
+        <li><a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Седона"></a></li>
+        <li><a href="#">КАРТА ШТАТА</a></li>
+        <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+    </ul>
 </nav>
 </header>
 <main class="main-content">	
@@ -98,16 +96,16 @@
     <label>
         <span class="search-hotels-form">Взрослые:</span>
         <button class="button-minus" type="button">-</button>
-        <input class="number-adults" name="adults" type="number" value="2" min="0" max="5" step="1">
+        <input class="number-adults" type="number" name="adults"  value="2" min="0" max="5" step="1">
         <button class="button-plus" type="button">+</button>
     </label>
     <label>
         <span class="search-hotels-form">Дети:</span>
         <button class="button-minus" type="button">-</button>
-        <input type="number-children" name="children" value="0" min="0" max="5" step="1">
+        <input class="number-children" type="number" name="children" value="0" min="0" max="5" step="1">
         <button class="button-plus" type="button">+</button>
     </label><br>
-    <input class="button-search" name="submit" type="submit" value="найти">
+    <input class="button-search" type="submit" value="найти">
 </form>
 <div class="map">
    <img src="img/map.jpg" width="1200" height="593" alt="карта">
@@ -120,14 +118,14 @@
   #VISITSEDONA
 </a>
 <div class="footer-social">
-  <a class="social-button" href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter">Твиттер</a>
-  <a class="social-button" href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook">Фейсбук</a>
-  <a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube">Ютуб</a>
+    <a class="social-button" href="#" aria-label="Твиттер"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a>
+    <a class="social-button" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook"></a>
+    <a class="social-button" href="#" aria-label="Ютуб"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
 </div>
 <p class="footer-copyright">
   <b>WEBSITE BY</b>
   <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-   <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy">
+   <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy" aria-label="Интенсив HTMLAcademy">
 </a>
 </p>
 </footer>

@@ -82,28 +82,32 @@
   <form class="search-hotels" action="https://echo.htmlacademy.ru" method="post">
     <h3 class="search-head">Поиск гостиницы в Седоне</h3>
     <label>
-        <span class="search-hotels-form-fords">Дата заезда:</span>
-        <input class="search-input" type="text" value="24 апреля 2017">
-        <span class="button-calendar">
+        <span class="search-hotels-form">Дата заезда:</span>
+        <input class="search-input" type="text" name="date-arrival" value="24 апреля 2017">
+        <button class="button-calendar">
             <img src="img/calendar.svg" width="21" height="22" alt="календарь">
-        </span>   
+        </button>   
     </label><br>
     <label>
-        <span class="search-hotels-form-fords">Дата выезда:</span>
-        <input class="search-input" type="text" value="4 июля 2017">
-        <span class="button-calendar">
+        <span class="search-hotels-form">Дата выезда:</span>
+        <input class="search-input" type="text" name="date-departure" value="04 июля 2017">
+        <button class="button-calendar">
             <img src="img/calendar.svg" width="21" height="22" alt="календарь">
-        </span>   
+        </button>   
     </label><br>
-    <label >
-        <span class="search-hotels-form-fords">Взрослые:</span>
-        <!-- class="search-quantity" выбор кол-ва -->
+    <label>
+        <span class="search-hotels-form">Взрослые:</span>
+        <button class="button-minus" type="button">-</button>
+        <input class="number-adults" name="adults" type="number" value="2" min="0" max="5" step="1">
+        <button class="button-plus" type="button">+</button>
     </label>
-    <label >
-        <span class="search-hotels-form-fords">Дети:</span>
-        <!-- class="search-quantity" выбор кол-ва -->
+    <label>
+        <span class="search-hotels-form">Дети:</span>
+        <button class="button-minus" type="button">-</button>
+        <input type="number-children" name="children" value="0" min="0" max="5" step="1">
+        <button class="button-plus" type="button">+</button>
     </label><br>
-    <input class="button-search" type="submit" value="найти">
+    <input class="button-search" name="submit" type="submit" value="найти">
 </form>
 <div class="map">
    <img src="img/map.jpg" width="1200" height="593" alt="карта">

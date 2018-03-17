@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	color: #000;
 	font-size: 14px;
 	line-height: 26px;
@@ -54,6 +54,10 @@ a {
 	background-color: #fff;
 }
 
+.advantages p {
+	font-weight: 400;
+}
+
 .advantages p b {
 	font-size: 26px;
 }
@@ -73,14 +77,22 @@ a {
 	line-height: 26px;
 }
 
-.advantages-list li {
+.advantages-item ul>li {
 	color: 333;
 	background-color: #fff;
+}
+
+.advantages-list li {
+	background-color: #eee;
 }
 
 .interesting {
 	text-align: center;
 	background-color: #fff;
+}
+
+.interesting p {
+	font-weight: 400;
 }
 
 .interesting h2{
@@ -95,11 +107,31 @@ a {
 	color: #333;
 }
 
-.search-head{
-	color: #fff;
+.buttom-hotels{
 	font-size: 21px;
 	line-height: 26px;
+}
+
+.button-search-hotels {
+	font: inherit;
 	background-color: #766357;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;	
+	width: 568px;
+	height: 86px;
+}
+
+.button-search-hotels:hover {
+	background-color: #604e43;
+	outline: none;
+}
+
+.button-search-hotels:focus,
+.button-search-hotels:active {
+	background-color: #503e33;
+	color: #928a85;
+	outline: none;
 }
 
 .search-hotels-form {
@@ -118,6 +150,8 @@ a {
 	text-transform: uppercase;
 	color: #fff;
 	border: none;	
+	width: 458px;
+	height: 58px;
 }
 
 .button-search:hover {
@@ -125,10 +159,131 @@ a {
 	outline: none;
 }
 
+.button-search:focus,
 .button-search:active {
 	background-color: #5496bd;
 	color: #94b9d2;
 	outline: none;
+}
+
+.number-adults,
+.number-children,
+.search-input {
+	background-color: #f2f2f2;
+	outline: none;
+}
+
+.search-input:hover {
+	background-color: #ebebeb;
+	outline: none;
+}
+
+.search-input:focus {
+	background-color: #fff;
+	outline: none;
+}
+
+/*----- body hotels -----*/
+
+.hotels-form{
+	background-image: url('../img/img-filters.jpg');
+	background-repeat: no-repeat;
+}
+
+.cost-legend,
+.filters-name {
+	font-weight: 700px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+}
+
+
+.type-name {
+	font: initial;
+	font-weight: 400px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+}
+
+.type-filters ul,
+.infrastructure-filters ul {
+	list-style: none;
+}
+
+.cost-range {
+	font: initial;
+	font-weight: 400px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+}
+
+.hotels-filter,
+.hotels-found {
+	background-color: #fff;
+	
+}
+
+.hotels-found h3 {
+	font-weight: 700px;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.hotels-found h4 {
+	font-weight: 400px;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.hotels-found ul li {
+	list-style: none;
+	display: inline;
+}
+
+.hotels-title a {
+	font-weight: 700px;
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+}
+
+.hotels-title a:hover {
+	color: #81b3d2;
+}
+
+.hotels-title a:focus {
+	color: #cecece;
+}
+
+.hotels-catalog-list li{
+	list-style: none;
+}
+
+.description-price,
+.description-type {
+	font: initial;
+	font-weight: 400px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.hotels-rating {
+	background-color: #f2f2f2;
+	font: initial;
+	font-weight: 400px;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.button-detail,
+.button-book {
+	font-weight: 700px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 
@@ -145,10 +300,72 @@ a {
 
 }
 
-.social-button {
-	background-color: #81b3d2;
+.footer-visitsedona {
+	float: left;
 }
 
-.social-buttom:hover {
-	background-image: url('img/logo-htmlacademy-hover.svg');
+.footer-social {
+	float: left;
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.social {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background: #bdc3c7;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.social-tw {
+	background-image: url('../img/twit.png');
+}
+
+.social-fb {
+	background-image: url('../img/fb.png');
+}
+
+.social-yt {
+	background-image: url('../img/youtube.png');
+}
+
+.social-tw:hover {
+	background-image: url('../img/twit1.png');
+	outline: none;
+}
+
+.social-tw:focus,
+.social-tw:active {
+	background-image: url('../img/twit2.png');
+	outline: none;
+}
+
+.social-fb:hover {
+	background-image: url('../img/fb1.png');
+	outline: none;
+}
+
+.social-fb:focus,
+.social-fb:active {
+	background-image: url('../img/fb2.png');
+	outline: none;
+}
+
+.social-yt:hover {
+	background-image: url('../img/yt1.png');
+	outline: none;
+}
+
+.social-yt:focus,
+.social-yt:active {
+	background-image: url('../img/yt2.png');
+	outline: none;
+}
+
+/*
+.footer-htmlacademy {
+	float: right;
 }

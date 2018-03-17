@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -27,66 +28,68 @@
         <p><b>СЕДОНА — небольшой городок в АРИЗОНЕ,  заслуживающий большего!</b></p>
         <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
     </div>	
-      <ul class="advantages-list">
-       <li class="advantages-item">   				
-        <div class="item-white-words">
-            <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-            <span>— №1 —</span>	
-            <p>Седона — не атракцион для туристорв, там течет своя жизнь</p>
-        </div>
-        <div class="town-img">
-            <img src="img/true-town.jpg" width="800" height="401" alt="Настоящий город">
-        </div>
-        <ul>
-          <li class="advantages-item">
-            <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
-            <h3>Жилье</h3>	
-            <p>Рекомендуем пожить в настощем мотеле, все как в кино!</p>			
+    <ul class="advantages-list">
+        <li class="advantages-item">   				
+            <div class="item-white-words">
+                <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+                <span>— №1 —</span>	
+                <p>Седона — не атракцион для туристорв, там течет своя жизнь</p>
+            </div>
+            <div class="town-img">
+                <img src="img/true-town.jpg" width="800" height="401" alt="Настоящий город">
+            </div>
+            <ul>
+                <li class="advantages-item">
+                    <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+                    <h3>Жилье</h3>	
+                    <p>Рекомендуем пожить в настощем мотеле, все как в кино!</p>			
+                </li>
+                <li class="advantages-item">
+                    <img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+                    <h3>Еда</h3>	
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="advantages-item">
+                    <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+                    <h3>Сувениры</h3>	
+                    <p>Не только китайского, но и местного производства!</p>
+                </li>
+            </ul>	    			
         </li>
         <li class="advantages-item">
-            <img src="img/icon-3.svg" width="74" height="70" alt="Еда">
-            <h3>Еда</h3>	
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <div class="item-white-words">
+                <h3>Там есть мост дьявола</h3>
+                <span>— №2 —</span>	
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="bridge-img">
+                <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
+            </div>
         </li>
         <li class="advantages-item">
-            <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
-            <h3>Сувениры</h3>	
-            <p>Не только китайского, но и местного производства!</p>
+            <h3>Небольшая площадь</h3>
+            <span>— №3 —</span>	
+            <p>Все достопримечательности находятся очень близко</p>
         </li>
-    </ul>	    			
-</li>
-<li class="advantages-item">
-    <div class="item-white-words">
-        <h3>Там есть мост дьявола</h3>
-        <span>— №2 —</span>	
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-    </div>
-    <div class="bridge-img">
-        <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
-    </div>
-</li>
-<li class="advantages-item">
-    <h3>Небольшая площадь</h3>
-    <span>— №3 —</span>	
-    <p>Все достопримечательности находятся очень близко</p>
-</li>
-<li class="advantages-item">
-    <h3>Красивая дорога</h3>
-    <span>— №4 —</span>	
-    <p>Ехать в седону из Лас-Вегаса совсем не скучно</p>
-</li>
-<li class="advantages-item">
-    <h3>Мало туристов</h3>
-    <span>— №5 —</span>	
-    <p>Большинство едет в гранд каньон и толпится там</p>
-</li>
-</ul>
+        <li class="advantages-item">
+            <h3>Красивая дорога</h3>
+            <span>— №4 —</span>	
+            <p>Ехать в седону из Лас-Вегаса совсем не скучно</p>
+        </li>
+        <li class="advantages-item">
+            <h3>Мало туристов</h3>
+            <span>— №5 —</span>	
+            <p>Большинство едет в гранд каньон и толпится там</p>
+        </li>
+    </ul>
 </section>
 <section class="interesting">
   <h2>Заинтересовались?</h2>
   <p class="interesting-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостниц в седоне</p>
   <form class="search-hotels" action="https://echo.htmlacademy.ru" method="post">
-    <h3 class="search-head">Поиск гостиницы в Седоне</h3>
+    <div class="buttom-hotels">
+        <input class="button-search-hotels" type="submit" value="Поиск гостиницы в Седоне"/>
+    </div>
     <label>
         <span class="search-hotels-form">Дата заезда:</span>
         <input class="search-input" type="text" name="date-arrival" value="24 апреля 2017">
@@ -101,20 +104,21 @@
             <img src="img/calendar.svg" width="21" height="22" alt="календарь">
         </button>   
     </label><br>
-    <label>
-        <span class="search-hotels-form">Взрослые:</span>
+    <div class="search-hotels-form">
+        <label for="adults">Взрослые:</labek>
         <button class="button-minus" type="button">-</button>
         <input class="number-adults" type="number" name="adults"  value="2" min="0" max="5" step="1">
         <button class="button-plus" type="button">+</button>
-    </label>
-    <label>
-        <span class="search-hotels-form">Дети:</span>
+    </div>
+    
+    <div class="search-hotels-form">
+        <label for="children">Дети:</span>
         <button class="button-minus" type="button">-</button>
-        <input class="number-children" type="number" name="children" value="0" min="0" max="5" step="1">
+        <input class="number-children" type="number" id="children" name="children" value="0" min="0" max="5" step="1">
         <button class="button-plus" type="button">+</button>
-    </label><br>
+    </div><br>
     <div class="buttom-search-main">
-        <input class="button-search" type="submit" value="найти">
+        <input class="button-search" type="submit" value="найти"/>
     </div>
 </form>
 <div class="map">
@@ -124,20 +128,27 @@
 </section>
 </main>
 <footer class="main-footer">
- <a href="#" class="hashtag-visitsedona">
-  #VISITSEDONA
-</a>
-<div class="footer-social">
-    <a class="social-button" href="#" aria-label="Твиттер"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a>
-    <a class="social-button" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook"></a>
-    <a class="social-button" href="#" aria-label="Ютуб"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
-</div>
-<p class="footer-copyright">
-  <b>WEBSITE BY</b>
-  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-   <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy" aria-label="Интенсив HTMLAcademy">
-</a>
-</p>
+    <section class="footer-content">
+        <div class="footer-visitsedona">
+            <a href="#" class="hashtag-visitsedona">
+              #VISITSEDONA
+            </a>
+        </div>
+        <div class="footer-social">
+                    <a href="#" class="social social-tw" aria-label="Твиттер"></a>
+                    <a href="#" class="social social-fb" aria-label="Фейсбук"></a>
+                    <a href="#" class="social social-yt" aria-label="Ютуб"></a>
+            <!--<a class="social-button" href="#" aria-label="Твиттер"><img src="img/twitter.svg" width="20" height="16" alt="twitter"></a>
+            <a class="social-button" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a>
+            <a class="social-button" href="#" aria-label="Ютуб"><img src="img/youtube.svg" width="17" height="15" alt="youtube"></a> -->
+        </div>
+        <div class="footer-htmlacademy">
+            <span class="footer-copyright">WEBSITE BY</span>
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLAcademy" aria-label="Интенсив HTMLAcademy">
+            </a>
+        </div>
+    </section>
 </footer>
 </body>
 </html>

@@ -234,6 +234,28 @@ a {
 	border: 0px;
 }
 
+.buttom-show-main {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.button-show {
+	font: inherit;
+	background: transparent;
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid #fff;	
+	width: 133px;
+	height: 32px;
+}
+
+.button-show:hover {
+	background-color: #fff;
+	color: #000;
+	outline: none;
+}
+
+
 .button-rating,
 .button-type,
 .button-price {

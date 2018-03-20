@@ -47,6 +47,7 @@ a {
 	text-align: center;
 }
 
+
 .advantages {
 	text-align: center;
 }
@@ -452,30 +453,6 @@ ul.social li {
 	margin: auto;
 }
 
-/*
-.social li:nth-child(2){
-	width: 47px;
-	height: 48px;
-}
-
-.social li:nth-child(1) a {
-	position: relative;
-	top: 11px;
-	left: 14px;
-}
-
-.social li:nth-child(2) a {
-	position: relative;
-	top: 13px;
-	left: 17px;
-}
-
-.social li:nth-child(3) a {
-	position: relative;
-	top: 11px;
-	left: 15px;
-}*/
-
 .social-button:hover{
 	background-color: #669ec0;
 }
@@ -490,3 +467,58 @@ ul.social li {
 	float: left;
 }
 
+*/
+
+/*----- Сеточные стили ------*/
+
+body,
+html {
+	min-width: 1200px;
+	max-width: 1200px;
+	min-height: 2762px;
+	margin: 0 auto;
+	box-shadow: 0 1px 30px 5px #dbdbdb;
+}
+
+.main-navigation {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+ul.site-navigation {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.site-navigation li {
+	display: flex;
+	width: 239px;
+	height: 56px;
+}
+
+.site-htl a,
+.site-map a,
+.site-fv a,
+.site-inf a {
+	margin:  auto;
+}
+
+li.site-fv {
+	border-right: 244px solid white;
+}
+
+.main-header-logo img {
+	position: absolute;
+	top: 0;
+	border: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}

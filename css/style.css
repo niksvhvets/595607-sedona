@@ -574,11 +574,15 @@ ul.site-navigation {
 	flex-wrap: wrap;
 }
 
-
-
 .advantages-item {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
+}
+
+.town-img img{
+	width: 800px;
+	height: 100%;
 }
 
 .advantages-item1,
@@ -637,16 +641,14 @@ ul.site-navigation {
 
 .advantages-item1 {
 	border: 0px solid black;
-
 	display: flex;
 	flex-direction: column;
 	width: 400px;
-
 }
 
 .item-white-words h3 {
 	margin-top: 50px;
-	margin: o auto;
+	margin: 0  auto;
 	width: 100%;
 }
 

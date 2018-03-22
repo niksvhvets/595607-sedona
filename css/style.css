@@ -50,6 +50,7 @@ h3 {
 
 .backgound-logo {
 	text-align: center;
+
 }
 
 
@@ -489,6 +490,10 @@ html {
 	box-shadow: 0 1px 30px 5px #dbdbdb;
 }
 
+ div {
+	padding: 0;
+	margin: 0;
+}
 
 .main-header {
 	position: relative;
@@ -524,9 +529,9 @@ ul.site-navigation {
 	margin:  auto;
 }
 
-li.site-fv {
+/*li.site-fv {
 	border-right: 244px solid white;
-}
+}*/
 
 .main-header-logo  {
 	position: absolute;
@@ -541,7 +546,7 @@ li.site-fv {
 }
 
 .backgound-logo img{ 
-	margin-bottom: -8px;
+	margin-bottom: 18px;
 }
 
 .sedona-advantages {
@@ -566,16 +571,17 @@ li.site-fv {
 	flex-direction: row;
 	margin: 0;
 	padding: 0;
-	
+	flex-wrap: wrap;
 }
+
+
 
 .advantages-item {
 	display: flex;
 	flex-wrap: wrap;
-
-	
 }
 
+.advantages-item1,
 .advantages-item div {
 	display: flex;
 	flex-direction: row;
@@ -589,6 +595,8 @@ li.site-fv {
 .advantages-item div img {
 	height: 100%;
 	padding-left: 400px;
+	width: 800px;
+
 }
 
 .advantages-item ul {
@@ -627,8 +635,14 @@ li.site-fv {
 	margin: 0px 50px 85px 50px;
 }
 
+.advantages-item1 {
+	border: 0px solid black;
 
-.item-white-words{}
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+
+}
 
 .item-white-words h3 {
 	margin-top: 50px;

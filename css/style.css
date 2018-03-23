@@ -491,19 +491,20 @@ html {
 }
 
  div {
-	padding: 0;
+	padding: 0; 
 	margin: 0;
 }
 
 .main-header {
 	position: relative;
+	background-color: white;
 }
 
 .main-navigation {
 	background-color: #fff;
 	margin: 0 auto;
-	width: 1200px;
-	
+	width: 1056px;
+	 
 }
 
 ul.site-navigation {
@@ -512,9 +513,10 @@ ul.site-navigation {
 	margin: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+	
 }
 
 .site-navigation li {
@@ -522,16 +524,17 @@ ul.site-navigation {
 	padding: 15px 0px;
 }
 
-.site-htl a,
-.site-map a,
-.site-fv a,
-.site-inf a {
-	margin:  auto;
+.site-fv a {
+	margin-left: 145px;
 }
 
-/*li.site-fv {
-	border-right: 244px solid white;
-}*/
+.site-map a {
+	margin-left: 387px;
+}
+
+.site-htl a {
+	margin-left: 160px;
+}
 
 .main-header-logo  {
 	position: absolute;
@@ -605,7 +608,7 @@ ul.site-navigation {
 
 .advantages-item ul {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row ;
 	margin: 0;
 	padding: 0;
 	width: 1200px;
@@ -620,7 +623,7 @@ ul.site-navigation {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	flex-basis: 400px;
-}
+} 
 
 .advantages-item ul li img {
 	margin-top: 50px;

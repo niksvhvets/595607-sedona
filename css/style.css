@@ -23,6 +23,8 @@ h3,h2 {
 	margin: 0;
 }
 
+}
+
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
@@ -582,12 +584,12 @@ ul.site-navigation {
 
 .town-img img {
 	width: 800px;
-	height: 100%;
+	height: auto;
 }
 
 .bridge-img img {
 	width: 800px;
-	height: 100%;
+	height: auto;
 }
 
 .advantages-item .item-white-words {
@@ -610,12 +612,12 @@ ul.site-navigation {
 
 .advantages-item .town-img {
 	width: 800px;
-	min-height: 256px;
+	height: 256px;
 }
 
 .advantages-item .bridge-img {
 	width: 800px;
-	min-height: 256px;
+	height: 256px;
 }
 
 .feauters-item {

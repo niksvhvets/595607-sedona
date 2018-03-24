@@ -246,6 +246,15 @@ h3,h2 {
 	border: 0px;
 }
 
+.hotels-found-sort{
+	padding-left: 38px;
+	padding-right: 500px;
+}
+
+.hotels-found-sorting {
+	padding-left: 48px;
+}
+
 .buttom-show-main {
 	font-size: 21px;
 	line-height: 26px;
@@ -908,18 +917,17 @@ li.feauters-item {
 }*/
 
 .hotels-found {
+	width: 1056px;
 	height: 86px;
-	width: 1200px;
+	margin-left: 72px;
 }
 
-.hotel-container {
-	height: 1056px;
-	height: 86px;
-}
-
-
-/*.hotels-found .container-flex {
-	justify-content: space-between;
+.hotels-container .container-flex {
+	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: nowrap;
+}
 
+.hotels-container {
+	border-bottom: 1px solid #e5e5e5;
 }

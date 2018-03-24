@@ -734,7 +734,7 @@ li.feauters-item {
 }
 
 .search-hotels-wrapper {
-	padding: 20px 20px;
+	padding: 55px 20px;
 	display: flex; 
 	flex-wrap: wrap;
 	max-width: 458px;
@@ -744,8 +744,22 @@ li.feauters-item {
 }
 
 .search-hotels-wrapper-show {
+	position: absolute;
 	display: block;
-	z-index: 999999;
+	padding: 30px 55px 54px 55px;
+	display: flex; 
+	flex-wrap: wrap;
+	max-width: 458px;
+	margin: auto;
+	justify-content: space-between;
+	z-index: 2;
+	background-color: white;
+	box-shadow: 0px 1px 20px 1px gray;
+}
+
+.map {
+	position: relative;
+	z-index: 1;
 }
 
 .date-arrival,
@@ -835,13 +849,11 @@ li.feauters-item {
 	align-items: center;
 	justify-content: ;
 	flex-wrap: wrap;
-
 }
 
 .search-button-form {
 	display: flex;
 }
-
 
 .button-search {
 	margin-top: 54px;

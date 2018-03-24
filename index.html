@@ -19,7 +19,7 @@
     </nav>
     <a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Седона"></a>
 </header>
-<main class="main-content">	
+<main class="main-content"> 
  <section class="advantages">
     <div class="background-logo">
         <img src="img/background-logo.jpg" width="1200" height="508" alt="Седона">
@@ -27,17 +27,17 @@
     <div class="sedona-advantages">
         <p><b>СЕДОНА — небольшой городок в АРИЗОНЕ,  заслуживающий большего!</b></p>
         <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
-    </div>	
+    </div>  
     <ul class="advantages-list">
-        <li class="advantages-item">   				
+        <li class="advantages-item">                
             <div class="item-white-words">
                 <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-                <span>— №1 —</span>	
+                <span>— №1 —</span> 
                 <p>Седона — не атракцион для туристорв, там течет своя жизнь</p>
             </div>
             <div class="town-img">
                 <img src="img/true-town.jpg" width="800" height="256" alt="Настоящий город">
-            </div>   			
+            </div>              
         </li>
         <ul>
             <li class="feauters-item"><!---->
@@ -62,24 +62,24 @@
             </div>
             <div class="item-white-words">
                 <h3>Там есть мост дьявола</h3>
-                <span>— №2 —</span>	
+                <span>— №2 —</span> 
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             
         </li>
         <li class="advantages-feauters-item">
             <h3>Небольшая площадь</h3>
-            <span>— №3 —</span>	
+            <span>— №3 —</span> 
             <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li class="advantages-feauters-item">
             <h3>Красивая дорога</h3>
-            <span>— №4 —</span>	
+            <span>— №4 —</span> 
             <p>Ехать в седону из Лас-Вегаса совсем не скучно</p>
         </li>
         <li class="advantages-feauters-item">
             <h3>Мало туристов</h3>
-            <span>— №5 —</span>	
+            <span>— №5 —</span> 
             <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
     </ul>
@@ -90,13 +90,9 @@
   <form class="search-hotels" action="https://echo.htmlacademy.ru" method="post">
     <div class="buttom-hotels">
         <input class="button-search-hotels" type="button" value="Поиск гостиницы в Седоне">
-       <!-- <a href="#" class="button-search-hotels">Поиск гостиницы в Седоне</a>-->
-
     </div>
-
-            <div class="search-hotels-wrapper">
-
-                <p>
+         <div class="search-hotels-wrapper">
+            <p>
                 <label class="date-arrival">
                     <span class="date-form">Дата заезда:</span>
                     <input class="search-input" type="text" name="date-arrival" value="24 апреля 2017" maxlength="20">
@@ -104,8 +100,8 @@
                         <img src="img/calendar.png" width="21" height="22" alt="календарь">
                     </button>   
                 </label>
-                </p> 
-                <p>
+            </p> 
+             <p>
                 <label class="date-departure">
                     <span class="date-form">Дата выезда:</span>
                     <input class="search-input" type="text" name="date-departure" value="04 июля 2017" maxlength="20">
@@ -113,8 +109,8 @@
                         <img src="img/calendar.png" width="21" height="22" alt="календарь" >
                     </buttom> 
                 </label>
-                </p> 
-                <div class="search-hotels-form">
+            </p> 
+            <div class="search-hotels-form">
                 <p>
                     <label class="adults-label" for="adults">Взрослые:</label>
                     <button class="button-minus" type="button"></button>
@@ -127,12 +123,11 @@
                     <input class="number-children" type="number" id="children" name="children" value="0" min="0" max="5" step="1">
                     <button class="button-plus" type="button"></button>
                 </p>
-                </div>
-                <div class="buttom-search-main">
-                    <input class="button-search" type="submit" value="найти"/>
-                </div>
-         
-    </div>
+            </div>
+            <div class="buttom-search-main">
+                <input class="button-search" type="submit" value="найти"/>
+            </div>    
+        </div>
     <div class="modal-overlay" id="modal-overlay"></div>
 </form>
 <div class="map">
@@ -169,13 +164,10 @@
 <script>
     var link = document.querySelector(".button-search-hotels");
     var popup = document.querySelector(".search-hotels-wrapper");
-
     link.addEventListener("click", function(event) { 
         event.preventDefault(); 
         popup.classList.add("search-hotels-wrapper-show");
     });
-
 </script>
 </body>
 </html>
-

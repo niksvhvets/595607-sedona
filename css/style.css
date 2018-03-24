@@ -23,8 +23,6 @@ h3,h2 {
 	margin: 0;
 }
 
-}
-
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
@@ -442,13 +440,14 @@ h3,h2 {
 }
 
 .footer-social ul {
-	list-style: none;}
+	list-style: none;
+	margin-left: 30px;
+}
 
 ul.social li {
 	display: inline-block;
 	background-color: #81b3d2;
-	margin-right: 10px;
-	margin-left: 0px;	
+	
 }
 
 .social li {
@@ -474,19 +473,13 @@ ul.social li {
 	fill: #669ec0;
 }
 
-
-
-.footer-htmlacademy {
-	
-}
-
 /*----- Сеточные стили ------*/
 
 body,
 html {
 	min-width: 1200px;
 	max-width: 1200px;
-	min-height: 2762px;
+	/*min-height: 2762px;*/
 	margin: 0 auto;
 	box-shadow: 0 1px 30px 5px #dbdbdb;
 }
@@ -758,8 +751,9 @@ li.feauters-item {
 }
 
 .map {
-	position: relative;
+
 	z-index: 1;
+	height: 593px;
 }
 
 .date-arrival,
@@ -857,4 +851,57 @@ li.feauters-item {
 
 .button-search {
 	margin-top: 54px;
+}
+
+.container {
+	width: 967px;
+	height: 120px;
+	margin-left: 132px;
+}
+
+.container-flex {
+	display: flex;
+}
+.main-footer .container-flex {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-htmlacademy {
+	display: flex;
+	width: 200px;
+}
+.footer-htmlacademy span {
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+
+.main-footer {
+	position: absolute;
+	width: 1200px;
+	height: 120px;
+	z-index: 9;
+	opacity: 0.9;
+
+}
+
+
+/*----- СЕТОЧНЫЕ СТИЛИ HOTELS -----*/
+
+.hotels-form {
+	height: 218px;
+	width: 1200px;
+}
+
+.hotels-form .container-flex {
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.hotels-found .container-flex {
+	justify-content: space-between;
+	align-items: center;
 }

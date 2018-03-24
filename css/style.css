@@ -477,8 +477,7 @@ ul.social li {
 
 body,
 html {
-	min-width: 1200px;
-	max-width: 1200px;
+	width: 1200px;
 	/*min-height: 2762px;*/
 	margin: 0 auto;
 	box-shadow: 0 1px 30px 5px #dbdbdb;
@@ -487,6 +486,10 @@ html {
  div {
 	padding: 0; 
 	margin: 0;
+}
+
+body {
+	position: relative;
 }
 
 .main-header {
@@ -883,25 +886,40 @@ li.feauters-item {
 	height: 120px;
 	z-index: 9;
 	opacity: 0.9;
-
+	bottom: 0;
 }
 
 
 /*----- СЕТОЧНЫЕ СТИЛИ HOTELS -----*/
 
-.hotels-form {
+.main-footer.footer-relative{
+	position: relative;
+}
+
+
+/*.hotels-form {
 	height: 218px;
 	width: 1200px;
 }
 
-.hotels-form .container-flex {
-	justify-content: space-between;
-	align-items: center;
+.hotels-filter .container-flex {
+	justify-content: ;
+	align-items: ;
+}*/
+
+.hotels-found {
+	height: 86px;
+	width: 1200px;
+}
+
+.hotel-container {
+	height: 1056px;
+	height: 86px;
 }
 
 
-
-.hotels-found .container-flex {
+/*.hotels-found .container-flex {
 	justify-content: space-between;
 	align-items: center;
+
 }

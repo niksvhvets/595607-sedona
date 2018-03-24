@@ -727,9 +727,10 @@ li.feauters-item {
 }
 
 .search-hotels {
-	 width: 568px;
-	 height: 481px;
+	 max-width: 568px;
+	 max-height: 481px;
 	 margin: auto;
+
 }
 
 .search-hotels-wrapper {
@@ -739,6 +740,12 @@ li.feauters-item {
 	max-width: 458px;
 	margin: auto;
 	justify-content: space-between;
+	display: none;
+}
+
+.search-hotels-wrapper-show {
+	display: block;
+	z-index: 999999;
 }
 
 .date-arrival,
@@ -839,4 +846,3 @@ li.feauters-item {
 .button-search {
 	margin-top: 54px;
 }
-

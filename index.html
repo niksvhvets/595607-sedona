@@ -89,45 +89,51 @@
   <p class="interesting-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостниц в седоне</p>
   <form class="search-hotels" action="https://echo.htmlacademy.ru" method="post">
     <div class="buttom-hotels">
-        <input class="button-search-hotels" type="button" value="Поиск гостиницы в Седоне"/>
+        <input class="button-search-hotels" type="button" value="Поиск гостиницы в Седоне">
+       <!-- <a href="#" class="button-search-hotels">Поиск гостиницы в Седоне</a>-->
+
     </div>
-    <div class="search-hotels-wrapper">
-        <p>
-        <label class="date-arrival">
-            <span class="date-form">Дата заезда:</span>
-            <input class="search-input" type="text" name="date-arrival" value="24 апреля 2017" maxlength="20">
-            <button class="button-calendar">
-                <img src="img/calendar.png" width="21" height="22" alt="календарь">
-            </button>   
-        </label>
-        </p> 
-        <p>
-        <label class="date-departure">
-            <span class="date-form">Дата выезда:</span>
-            <input class="search-input" type="text" name="date-departure" value="04 июля 2017" maxlength="20">
-            <buttom class="button-calendar">
-                <img src="img/calendar.png" width="21" height="22" alt="календарь" >
-            </buttom> 
-        </label>
-        </p> 
-        <div class="search-hotels-form">
-        <p>
-            <label class="adults-label" for="adults">Взрослые:</label>
-            <button class="button-minus" type="button"></button>
-            <input class="number-adults" type="number" name="adults" value="2" min="0" max="5" step="1">
-            <button class="button-plus" type="button"></button>
-        </p>
-        <p>
-            <label class="children-label" for="children">Дети:</label>
-            <button class="button-minus" type="button"></button>
-            <input class="number-children" type="number" id="children" name="children" value="0" min="0" max="5" step="1">
-            <button class="button-plus" type="button"></button>
-        </p>
+
+            <div class="search-hotels-wrapper">
+
+                <p>
+                <label class="date-arrival">
+                    <span class="date-form">Дата заезда:</span>
+                    <input class="search-input" type="text" name="date-arrival" value="24 апреля 2017" maxlength="20">
+                    <button class="button-calendar">
+                        <img src="img/calendar.png" width="21" height="22" alt="календарь">
+                    </button>   
+                </label>
+                </p> 
+                <p>
+                <label class="date-departure">
+                    <span class="date-form">Дата выезда:</span>
+                    <input class="search-input" type="text" name="date-departure" value="04 июля 2017" maxlength="20">
+                    <buttom class="button-calendar">
+                        <img src="img/calendar.png" width="21" height="22" alt="календарь" >
+                    </buttom> 
+                </label>
+                </p> 
+                <div class="search-hotels-form">
+                <p>
+                    <label class="adults-label" for="adults">Взрослые:</label>
+                    <button class="button-minus" type="button"></button>
+                    <input class="number-adults" type="number" name="adults" value="2" min="0" max="5" step="1">
+                    <button class="button-plus" type="button"></button>
+                </p>
+                <p>
+                    <label class="children-label" for="children">Дети:</label>
+                    <button class="button-minus" type="button"></button>
+                    <input class="number-children" type="number" id="children" name="children" value="0" min="0" max="5" step="1">
+                    <button class="button-plus" type="button"></button>
+                </p>
+                </div>
+                <div class="buttom-search-main">
+                    <input class="button-search" type="submit" value="найти"/>
+                </div>
+         
     </div>
-        <div class="buttom-search-main">
-            <input class="button-search" type="submit" value="найти"/>
-        </div>
-    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
 </form>
 <div class="map">
    <img src="img/map.jpg" width="1200" height="593" alt="карта">
@@ -160,6 +166,16 @@
             </a>
         </div>
 </footer>
+<script>
+    var link = document.querySelector(".button-search-hotels");
+    var popup = document.querySelector(".search-hotels-wrapper");
+
+    link.addEventListener("click", function(event) { 
+        event.preventDefault(); 
+        popup.classList.add("search-hotels-wrapper-show");
+    });
+
+</script>
 </body>
 </html>
 

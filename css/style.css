@@ -205,7 +205,7 @@ h3,h2 {
 
 /*----- body hotels -----*/
 
-.hotels-form{
+.hotels-filters{
 	background-image: url('../img/img-filters.jpg');
 	background-repeat: no-repeat;
 }
@@ -344,6 +344,10 @@ h3,h2 {
 
 .hotels-title a:focus {
 	color: #cecece;
+}
+
+.hotels-catalog-list {
+	margin: 0px;
 }
 
 .hotels-catalog-list li{
@@ -901,20 +905,15 @@ li.feauters-item {
 
 /*----- СЕТОЧНЫЕ СТИЛИ HOTELS -----*/
 
-.main-footer.footer-relative{
-	position: relative;
+.hotels-form {
+	width: 1056px;
+	height: 217px;
 }
 
-
-/*.hotels-form {
-	height: 218px;
-	width: 1200px;
+.hotels-filters .container-flex {
+	justify-content: flex-start;
+	align-items: center;
 }
-
-.hotels-filter .container-flex {
-	justify-content: ;
-	align-items: ;
-}*/
 
 .hotels-found {
 	width: 1056px;
@@ -925,9 +924,14 @@ li.feauters-item {
 .hotels-container .container-flex {
 	justify-content: flex-start;
 	align-items: center;
-	flex-wrap: nowrap;
 }
 
 .hotels-container {
 	border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.main-footer.footer-relative{
+	position: relative;
 }

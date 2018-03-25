@@ -21,74 +21,74 @@
 </nav>
 </header>
 <main class="main-content">
-    <section class="hotels-filter">
-        <form class="hotels-form container-flex" action="https://echo.htmlacademy.ru" method="post" aria-label="форма выбора фильтров">
-            <fieldset class="infrastructure-filters">
-                <legend class="filters-name">Инфраструктура:</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="pool" checked/>
-                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
-                                <span class="type-name">Бассейн</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="parking"/>
-                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
-                                <span class="type-name">Парковка</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="Wi-Fi"/>
-                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
-                                <span class="type-name">Wi-Fi</span>
-                            </label>
-                        </li>
-                    </ul>
-            </fieldset>
-            <fieldset class="type-filters">
-                <legend class="filters-name">Тип жилья:</legend>
-                    <ul>
-                        <li>
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="hotel" checked/>
-                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
-                                <span class="type-name">Гостиница</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="motel" checked/>
-                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
-                                <span class="type-name">Мотель</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="apartment" checked/>
-                                <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
-                                <span class="type-name">Апартаменты</span>
-                            </label>
-                        </li>
-                    </ul>
-            </fieldset>
-            <fieldset class="cost-filters">
-                <legend class="cost-legend">СТОИМОСТЬ В СУТКИ</legend>
-                    <label class="cost-range" for="cost-min-price">ОТ
-                        <input class="cost-min-price" type="number" name="cost-min-price" min="0" placeholder="0">
-                    </label>
-                    <label class="cost-range" for="cost-max-price">ДО
-                        <input class="cost-max-price" type="number" name="cost-max-price" max="3000" placeholder="3000">
-                    </label>
-                    <input class="range" type="range" min="0" max="3000">
-                    <div class="button-show-main">
-                        <input class="button-show" type="submit" value="Показать" aria-label="показать результат">
-                    </div>
-            </fieldset>  
-        </form>
+    <section class="hotels-filters">
+            <form class="hotels-form container-flex" action="https://echo.htmlacademy.ru" method="post" aria-label="форма выбора фильтров">
+                <fieldset class="infrastructure-filters">
+                    <legend class="filters-name">Инфраструктура:</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="pool" checked/>
+                                    <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                    <span class="type-name">Бассейн</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="parking"/>
+                                    <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                    <span class="type-name">Парковка</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="Wi-Fi"/>
+                                    <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                    <span class="type-name">Wi-Fi</span>
+                                </label>
+                            </li>
+                        </ul>
+                </fieldset>
+                <fieldset class="type-filters">
+                    <legend class="filters-name">Тип жилья:</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="hotel" checked/>
+                                    <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                    <span class="type-name">Гостиница</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="motel" checked/>
+                                    <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                    <span class="type-name">Мотель</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="apartment" checked/>
+                                    <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
+                                    <span class="type-name">Апартаменты</span>
+                                </label>
+                            </li>
+                        </ul>
+                </fieldset>
+                <fieldset class="cost-filters">
+                    <legend class="cost-legend">СТОИМОСТЬ В СУТКИ</legend>
+                        <label class="cost-range" for="cost-min-price">ОТ
+                            <input class="cost-min-price" type="number" name="cost-min-price" min="0" placeholder="0">
+                        </label>
+                        <label class="cost-range" for="cost-max-price">ДО
+                            <input class="cost-max-price" type="number" name="cost-max-price" max="3000" placeholder="3000">
+                        </label>
+                        <input class="range" type="range" min="0" max="3000">
+                        <div class="button-show-main">
+                            <input class="button-show" type="submit" value="Показать" aria-label="показать результат">
+                        </div>
+                </fieldset>  
+            </form>
     </section> 
     <section class="hotels-filter">
         <div class="hotels-container">

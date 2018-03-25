@@ -1,14 +1,6 @@
-    var modal = document.querySelector("#modal"),
-    modalOverlay = document.querySelector("#modal-overlay"),
-    closeButton = document.querySelector("#close-button"),
-    openButton = document.querySelector("#open-button");
- 
-closeButton.addEventListner("click", function(){
-   modal.classList.toggle("closed");
-   modalOverlay.classList.toggle("closed");
-});
- 
-openButton.addEventListner("click", function(){
-   modal.classList.toggle("closed");
-   modalOverlay.classList.toggle("closed");
-});
+var link = document.querySelector(".button-search-hotels");
+    var popup = document.querySelector(".search-hotels-wrapper");
+    link.addEventListener("click", function(event) { 
+        event.preventDefault(); 
+        popup.classList.add("search-hotels-wrapper-show");
+    });

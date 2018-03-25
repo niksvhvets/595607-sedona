@@ -210,7 +210,7 @@ h3,h2 {
 	background-repeat: no-repeat;
 }
 
-.cost-legend,
+/*.cost-legend,*/
 .filters-name {
 	font-weight: 700px;
 	font-size: 16px;
@@ -218,6 +218,123 @@ h3,h2 {
 	color: #fff;
 }
 
+
+/*---- Сложный фильтр с ползунками ----*/
+
+.filter-range {
+	width: 330px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.filter-range-title {
+	margin-bottom: 9px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-toggle-min {		
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.btn-transparent {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn-transparent:hover {
+	color: #000000;
+	background: #ffffff;
+}
 
 .type-name {
 	font: initial;
@@ -232,18 +349,23 @@ h3,h2 {
 	list-style: none;
 }
 
-.cost-range {
+/*.cost-range {
 	font: initial;
 	font-weight: 400px;
 	font-size: 14px;
 	line-height: 21px;
-	color: #fff;
+	color: #fff;*/
+}
+
+.hotels-container,
+.hotels-catalog {
+	background-color: #fff;
 }
 
 .hotels-filter,
 .hotels-found {
 	background-color: #fff;
-	border: 0px;
+	border: 1px;
 }
 
 .hotels-found-sort{
@@ -358,8 +480,8 @@ h3,h2 {
 
 .description-price,
 .description-type {
-	font: initial;
-	font-weight: 400px;
+	font: inherit;
+	font-weight: initial;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
@@ -378,12 +500,7 @@ h3,h2 {
 	font-weight: 700px;
 	font-size: 14px;
 	line-height: 21px;
-	padding: 5px 5px;
-}
-
-.hotels-item-button {
-	width: 270px;
-	height: 30px;
+	padding: 6px 16px;
 }
 
 .button-detail {
@@ -414,8 +531,6 @@ h3,h2 {
 	text-transform: uppercase;
 	color: #fff;
 	border: none;	
-	width: 142px;
-	height: 27px;
 }
 
 .button-book:hover {
@@ -903,17 +1018,27 @@ li.feauters-item {
 }
 
 
-/*----- СЕТОЧНЫЕ СТИЛИ HOTELS -----*/
+/*---------------- СЕТОЧНЫЕ СТИЛИ HOTELS ----------------*/
+
+/*----- Cтили фильтров -----*/
 
 .hotels-form {
 	width: 1056px;
 	height: 217px;
+	margin-left: 72px;
 }
 
 .hotels-filters .container-flex {
 	justify-content: flex-start;
 	align-items: center;
 }
+
+.type-filters {
+	margin-right: auto;
+}
+
+
+/*----- Cтили сортировки -----*/
 
 .hotels-found {
 	width: 1056px;
@@ -930,8 +1055,71 @@ li.feauters-item {
 	border-bottom: 1px solid #e5e5e5;
 }
 
+/*----- Сетка списка отелей -----*/
 
+.hotels-catalog-list {
+	width: 1200px;
+	height: 452px;
+	padding: 0;
+}
+
+li.hotels-catalog-item {
+	width: 1056px;
+	height: 93px;
+	display: flex;
+	padding: 30px 73px 30px 73px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-catalog-list .container-flex {
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.hotel-foto {
+	margin-left: 0px;
+	margin-right: 30px;
+	height: 90px;
+	width: 135px;
+}
+
+.hotels-description {
+	width: 258px;
+	height: 93px;
+	margin-right: auto;
+}
+
+.hotels-title {
+	margin-top: -4px;
+	margin-bottom: 1px;
+}
+
+.description-type {
+	width: 112px;
+}
+
+.description-type,
+.description-price {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+.button-detail {
+	margin-right: 3px;
+}
+
+.hotels-item-rating {
+	width: 111px;
+}
+
+.hotels-rating {
+	display: inline-block;
+	margin-top: 47px;
+}
+
+/*----- Стиль подвала ----*/
 
 .main-footer.footer-relative{
 	position: relative;
+	margin-top: 1px;
 }

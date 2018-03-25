@@ -337,8 +337,8 @@ h3,h2 {
 }
 
 .type-name {
-	font: initial;
-	font-weight: 400px;
+	font: inherit;
+	font-weight: initial;
 	font-size: 14px;
 	line-height: 26px;
 	color: #fff;
@@ -1037,6 +1037,10 @@ li.feauters-item {
 	margin-right: auto;
 }
 
+fieldset {
+	border: 0px;
+}
+
 
 /*----- Cтили сортировки -----*/
 
@@ -1053,6 +1057,10 @@ li.feauters-item {
 
 .hotels-container {
 	border-bottom: 1px solid #e5e5e5;
+}
+
+/*.checkbox-indicator-on {
+	background-image: url('../img/checkbox-on.png');
 }
 
 /*----- Сетка списка отелей -----*/

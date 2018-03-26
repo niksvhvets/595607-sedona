@@ -23,6 +23,24 @@ h3,h2 {
 	margin: 0;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
@@ -218,6 +236,22 @@ h3,h2 {
 	color: #fff;
 }
 
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35px;
+	height: 35px;
+	border: 0px;
+	
+	background-image: url('../img/checkbox-off.png');
+	background-repeat: no-repeat;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+	content: "";
+	background-image: url('../img/checkbox-on.png');
+}
 
 /*---- Сложный фильтр с ползунками ----*/
 
@@ -1042,6 +1076,17 @@ fieldset {
 }
 
 
+.checkbox {
+	position: relative;
+	padding-left: 40px;
+	cursor: pointer;
+}
+
+
+
+
+
+
 /*----- Cтили сортировки -----*/
 
 .hotels-found {
@@ -1057,10 +1102,6 @@ fieldset {
 
 .hotels-container {
 	border-bottom: 1px solid #e5e5e5;
-}
-
-/*.checkbox-indicator-on {
-	background-image: url('../img/checkbox-on.png');
 }
 
 /*----- Сетка списка отелей -----*/
@@ -1129,5 +1170,5 @@ li.hotels-catalog-item {
 
 .main-footer.footer-relative{
 	position: relative;
-	margin-top: 1px;
+	margin-top: 2px;
 }

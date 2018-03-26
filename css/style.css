@@ -236,6 +236,12 @@ input[type="radio"].visually-hidden {
 	color: #fff;
 }
 
+.checkbox {
+	position: relative;
+	padding-left: 40px;
+	cursor: pointer;
+}
+
 .checkbox input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
 	top: 0;
@@ -252,6 +258,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	background-image: url('../img/checkbox-on.png');
 }
+
 
 /*---- Сложный фильтр с ползунками ----*/
 
@@ -1076,11 +1083,7 @@ fieldset {
 }
 
 
-.checkbox {
-	position: relative;
-	padding-left: 40px;
-	cursor: pointer;
-}
+
 
 
 

@@ -263,7 +263,7 @@ input[type="radio"].visually-hidden {
 /*---- Сложный фильтр с ползунками ----*/
 
 .filter-range {
-	width: 330px;
+	width: 318px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -1082,11 +1082,30 @@ fieldset {
 	border: 0px;
 }
 
+.type-filters,
+.infrastructure-filters {
+	padding: 0;
+	margin-left: 0;
+	width: 241px;
+	height: 156px;
+}
 
+.infrastructure-filters {
+	margin-right: 15px;
+}
 
+.filters-field {
+	padding: 0;
+	margin: 0;
+}
 
+.filters-choose {
+	margin: 17px 0px 0px 0px;
+}
 
-
+.button-show {
+	margin-left: 86px;
+}
 
 
 

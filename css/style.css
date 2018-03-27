@@ -391,14 +391,6 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-/*.cost-range {
-	font: initial;
-	font-weight: 400px;
-	font-size: 14px;
-	line-height: 21px;
-	color: #fff;*/
-}
-
 .hotels-container,
 .hotels-catalog {
 	background-color: #fff;
@@ -410,9 +402,9 @@ input[type="radio"].visually-hidden {
 	border: 1px;
 }
 
-.hotels-found-sort{
+.hotels-found-sort {
 	padding-left: 38px;
-	padding-right: 500px;
+	padding-right: 50px;
 }
 
 .hotels-found-sorting {
@@ -446,19 +438,44 @@ input[type="radio"].visually-hidden {
 .button-price {
 	background-color: #fff;
 	border: none;
-	font: initial;
-	font-size: 14px;
-	line-height: 21px;
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 18px;
 	color: #cacaca;
-	border-bottom: 1px dashed #95bed8;
+	border-bottom: 1px dotted #95bed8;
 	outline: none;
+}
+
+.button-price {
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	margin-right: 32px;
+}
+
+.button-type {
+	width: 51px;
+	margin: 0;
+	padding: 0;
+	margin-right: 32px;
+}
+
+.button-rating {
+	width: 77px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.hotels-button {
+	margin-left: auto;
 }
 
 .button-rating:hover,
 .button-type:hover,
 .button-price:hover {
 	color: #95bed8;
-	border-bottom: 1px dashed #95bed8;
+	border-bottom: 1px dotted #95bed8;
 	outline: none;
 }
 
@@ -476,6 +493,31 @@ input[type="radio"].visually-hidden {
 	color: black;
 	outline: none;
 	border: none;
+}
+
+.button-up {
+	border: 0px;
+	background-color: transparent;
+	outline: none;
+}
+
+.button-down {
+	transform: rotate(180deg);
+	border: 0px;
+	background-color: transparent;
+	outline: none;
+}
+
+.button-up:hover path,
+.button-down:hover path {
+	fill: black;
+}
+
+.button-up:active path,
+.button-up:focus path,
+.button-down:active path,
+.button-down:focus path {
+	fill: #81b3d2;
 }
 
 .hotels-found h3 {
@@ -535,6 +577,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 400px;
 	font-size: 14px;
 	line-height: 21px;
+	padding: 3px 10px;
 }
 
 .button-detail,
@@ -888,7 +931,6 @@ li.feauters-item {
 
 .item-white-words span {
 	width: 100%;
-
 }
 
 .item-white-words p {
@@ -1287,12 +1329,21 @@ li.hotels-catalog-item {
 }
 
 .hotels-item-rating {
+	display: flex;
+	flex-direction: column;
+	align-items:  flex-end;
 	width: 111px;
+}
+
+.hotels-item-rating .stars {
+	display: flex;
+	align-items:  flex-end;
 }
 
 .hotels-rating {
 	display: inline-block;
 	margin-top: 47px;
+	font-family: inherit;
 }
 
 /*----- Стиль подвала ----*/

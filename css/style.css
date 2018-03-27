@@ -217,7 +217,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search-input:focus {
-	background-color: #fff;
+	border: 2px solid #e5e5e5;
+	background-color: white;
 	outline: none;
 }
 
@@ -625,7 +626,7 @@ ul.social li {
 	height: 48px;
 }
 
-.social-button img {
+.social-button svg {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -638,8 +639,8 @@ ul.social li {
 	background-color: #669ec0;
 }
 
-.social-button #yt:focus{
-	fill: #669ec0;
+.social-button:active path {
+	fill: #88b6d1;
 }
 
 /*----- Сеточные стили ------*/

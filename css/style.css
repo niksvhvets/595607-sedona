@@ -643,6 +643,23 @@ ul.social li {
 	fill: #88b6d1;
 }
 
+.button-academy svg {
+	position: absolute;
+	width: 115px;
+	height: 41px;
+	left: 980px;
+	margin: auto;
+}
+
+.button-academy:hover path {
+	fill: #81b3d2;
+}
+
+.button-academy:active path {
+	fill: #bdbbbc;
+}
+
+
 /*----- Сеточные стили ------*/
 
 body,

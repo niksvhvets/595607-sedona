@@ -975,15 +975,41 @@ li.feauters-item {
 	margin: 0;
 }
 
-.button-calendar {
-	display: flex;
-	border: 0;
-	background-color: #f2f2f2;
-	position: relative;
-	top: -30px;
-	right: -430px;
+.button-calendar-arrival,
+.button-calendar-departure {
+	width: 21px;
+	height: 22px;
 	padding: 0;
+}
+
+.button-calendar-arrival {
+	position: absolute;
+	border: 0px;
+	background-color: transparent;
+	right: 70px;
+	top: 50px;
 	margin: 0;
+	outline: none;
+}
+
+.button-calendar-departure {
+	position: absolute;
+	border: 0px;
+	background-color: transparent;
+	right: 70px;
+	top: 118px;
+	margin: 0;
+	outline: none;
+}
+
+.button-calendar-arrival:hover path,
+.button-calendar-departure:hover path {
+	fill: black;
+}
+
+.button-calendar-arrival:active path,
+.button-calendar-departure:active path {
+	fill: #81b3d2;
 }
 
 .number-adults,
@@ -1007,18 +1033,81 @@ li.feauters-item {
 }
 
 
-.button-plus{
-	background-image: url('../img/plus.png');
+.button-minus {
+	position: relative;
+	background-color: #f2f2f2;
 	width: 38px;
 	height: 40px;
 	border: 0px;
 }
 
-.button-minus {
-	background-image: url('../img/minus.png');
+.button-minus::before {
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 12px;
+	height: 3px;
+	background-color: #a9a9a9;
+}
+
+.button-minus:hover::before {
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 12px;
+	height: 3px;
+	background-color: black;
+}
+
+.button-minus:active::before {
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 12px;
+	height: 3px;
+	background-color: #81b3d2;
+}
+
+.button-plus {
+	position: relative;
+	background-color: #f2f2f2;
 	width: 38px;
 	height: 40px;
 	border: 0px;
+}
+
+.button-plus::before,
+.button-plus::after {
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 12px;
+	height: 3px;
+	background-color: #a9a9a9;
+}
+
+.button-plus::after {
+	transform: rotate(90deg);
+}
+
+.button-plus:hover::after,
+.button-plus:hover::before {
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 12px;
+	height: 3px;
+	background-color: black;
+}
+
+.button-plus:active::after,
+.button-plus:active::before {
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 12px;
+	height: 3px;
+	background-color: #81b3d2;
 }
 
 

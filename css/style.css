@@ -983,7 +983,6 @@ li.feauters-item {
 }
 
 .map {
-
 	z-index: 1;
 	height: 593px;
 }
@@ -1345,6 +1344,7 @@ li.hotels-catalog-item {
 	margin-top: 47px;
 	font-family: inherit;
 }
+
 
 /*----- Стиль подвала ----*/
 

@@ -403,12 +403,18 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-found-sort {
-	padding-left: 38px;
-	padding-right: 50px;
+	/*padding-left: 38px;
+	padding-right: 50px;*/
+	padding: 0;
+	margin: 0;
 }
 
 .hotels-found-sorting {
-	padding-left: 48px;
+	margin-left: 48px;
+}
+
+.hotels-found-sort-choose {
+	margin-left: 38px;
 }
 
 .buttom-show-main {
@@ -445,6 +451,7 @@ input[type="radio"].visually-hidden {
 	border-bottom: 1px dotted #95bed8;
 	outline: none;
 }
+
 
 .button-price {
 	width: 50px;
@@ -751,15 +758,15 @@ ul.site-navigation {
 	padding: 15px 0px;
 }
 
-.site-fv a {
+li.site-fv  {
 	margin-left: 145px;
 }
 
-.site-map a {
+li.site-map {
 	margin-left: 387px;
 }
 
-.site-htl a {
+li.site-htl {
 	margin-left: 160px;
 }
 
@@ -987,6 +994,10 @@ li.feauters-item {
 	height: 593px;
 }
 
+.map p {
+	padding: 0;
+  margin: 0;
+}
 .date-arrival,
 .date-departure {
 	display: flex;

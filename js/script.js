@@ -14,11 +14,21 @@ var departure = popup.querySelector("[name=departure]");
     });
 
     form.addEventListener("submit", function (event) {
-    	if (!arrival.value || !departure.value) {     
-	    	event.preventDefault();
+    	if (!arrival.value && !departure.value) {
+    		event.preventDefault();
 		    console.log("Нужно ввести дату заезда и выезда!");
-		  //  alert("Нужно ввести дату заезда!");
 		    popup.classList.toggle("search-hotels-wrapper-error");
+		    arrival.focus();
+    	} else if (!arrival.value) {     
+	    	event.preventDefault();
+		    console.log("Нужно ввести дату заезда!");
+		    popup.classList.toggle("search-hotels-wrapper-error");
+		    arrival.focus();
+		} else if (!departure.value) {     
+	    	event.preventDefault();
+		    console.log("Нужно ввести дату выезда!");
+		    popup.classList.toggle("search-hotels-wrapper-error");
+		    departure.focus();
 		} 
 	});
 

@@ -990,14 +990,13 @@ li.feauters-item {
 }
 
 .map {
+	background-image: url('../img/map.jpg');
 	z-index: 1;
 	height: 593px;
 }
 
-.map p {
-	padding: 0;
-  margin: 0;
-}
+
+
 .date-arrival,
 .date-departure {
 	display: flex;

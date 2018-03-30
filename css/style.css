@@ -1039,16 +1039,63 @@ li.feauters-item {
 
 .feauters-item h3.house {
 	font-size: 21px;
-	padding: 27px 0px 21px 0px;
+	margin: 27px 0px 21px 0px;
+	margin-right: 1px;
 }
 
 .feauters-item p.house {
-	width: 290px;
+	width: 270px;
 	letter-spacing: 0.4px;
 	line-height: 20px;
 	margin: 0;
-	padding-bottom: 25px;
+	margin-bottom: 23px;
+	margin-right: 1px;
+	letter-spacing: 0.08px;
+	line-height: 21px;
 }
+
+.feauters-item img.eat {
+	margin-right: 3px;
+}
+
+.feauters-item h3.eat {
+	font-size: 21px;
+	margin: 28px 0px 21px 0px;
+}
+
+.feauters-item p.eat {
+	width: 300px;
+	letter-spacing: 0.4px;
+	line-height: 20px;
+	margin: 0;
+	margin-bottom: 21px;
+	margin-left: 1px;
+	letter-spacing: 0.02px;
+	line-height: 21px;
+}
+
+.feauters-item img.gift {
+	
+}
+
+.feauters-item h3.gift {
+	font-size: 21px;
+	margin: 27px 0px 21px 0px;
+	letter-spacing: 0.15px; 
+	margin-left: 1px;
+}
+
+.feauters-item p.gift {
+	width: 300px;
+	letter-spacing: 0.4px;
+	line-height: 20px;
+	margin: 0;
+	margin-bottom: 27px;
+	letter-spacing: 0.07px;
+	line-height: 21px;
+	margin-left: 1px;
+}
+
 
 .item-white-words h3 {
 	width: 150px;
@@ -1067,6 +1114,30 @@ li.feauters-item {
 	line-height: 21px;
 	padding-bottom: 13px;
 }
+
+.item-white-words h3.bridge {
+	width: 150px;
+	letter-spacing: 0.1px;
+}
+
+.item-white-words span.bridge {
+	width: 100%;
+	margin: 21px 0px 19px 0px;
+	font-weight: 400;
+}
+
+.item-white-words p.bridge {
+	width: 320px;
+	margin: 0;
+	line-height: 21px;
+	padding-bottom: 15px;
+	letter-spacing: 0.02px;
+}
+
+
+
+
+
 
 .advantages-feauters-item h3 {
 	margin: 0  auto;

@@ -18,7 +18,6 @@
         </ul>
     </nav>
     <a href="index.html" class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Седона"></a>
-</nav>
 </header>
 <main class="main-content">
     <section class="hotels-filters">
@@ -46,7 +45,7 @@
                                     <span class="checkbox-indicator"><!-- картинка чекбокса --></span>
                                     <span class="type-name">Wi-Fi</span>
                                 </label>
-                            </li class="filters-choose">
+                            </li>
                         </ul>
                 </fieldset>
                 <fieldset class="type-filters">
@@ -78,8 +77,16 @@
                <div class="filter-range">
                   <div class="filter-range-title">Стоимость в сутки (р):</div>
                   <div class="price-controls">
-                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    <div class="min-price-wrapper">
+                        <label for="min-price"></label>
+                        <span class="min-price-from">от</span> 
+                        <input class="min-price-cost" type="text" id="min-price" name="min-price" value="0">
+                    </div>
+                    <div class="max-price-wrapper">
+                        <label for="max-price"></label>
+                        <span class="max-price-to">до</span>
+                        <input class="max-price-cost" type="text" id="max-price" name="max-price" value="3000">
+                    </div>
                   </div>
                   <div class="range-controls">
                     <div class="scale">
@@ -105,7 +112,7 @@
                     <ul class="hotels-found-sort">            
                         <li class="hotels-button"><!-- class="hotels-found-sort-choose" -->
                             <button class="button-price button-price-active" type="button" aria-label="сортировка по цене">ПО ЦЕНЕ</button>
-                        </li class="hotels-button">
+                        </li>
                         <li class="hotels-button">
                             <button class="button-type" type="button" aria-label="сортировка по типу">ПО ТИПУ</button>
                         </li>

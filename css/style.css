@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	color: #000;
 	font-size: 14px;
 	line-height: 26px;
@@ -88,6 +88,10 @@ input[type="radio"].visually-hidden {
 
 .sedona-advantages {
 	background-color: #fff;
+	width: 495px;
+	margin-top: 0px;
+	margin: auto;
+	margin-bottom: 50px;
 }
 
 .sedona-advantages span {
@@ -120,6 +124,7 @@ input[type="radio"].visually-hidden {
 
 .advantages-item h3{
 	text-align: center;
+	padding-top: 5px;
 	font-size: 21px;
 	line-height: 26px;
 }
@@ -136,15 +141,15 @@ input[type="radio"].visually-hidden {
 .interesting {
 	text-align: center;
 	background-color: #fff;
-	height: 291px;
 }
 
 .interesting h2{
+	width: 305px;
 	text-align: center;
 	font-size: 30px;
 	line-height: 36px;
-	margin-left: 1px;
-	padding-top: 50px;	
+	margin: auto;
+	padding-top: 48px;	
 	letter-spacing: 0.1px;
 }
 
@@ -529,9 +534,7 @@ input[type="radio"].visually-hidden {
 	font-size: 12px;
 	line-height: 18px;
 	color: #cacaca;
-	-webkit-text-decoration: underline dotted #95bed8;
-	-ms-text-decoration: underline dotted #95bed8;
-	        text-decoration: underline dotted #95bed8;
+	border-bottom: 1px dotted #95bed8;
 	outline: none;
 	cursor: pointer;
 }
@@ -570,8 +573,7 @@ input[type="radio"].visually-hidden {
 .button-type:hover,
 .button-price:hover {
 	color: #95bed8;
-	-webkit-text-decoration: underline dotted #95bed8;
-	        text-decoration: underline dotted #95bed8;
+	border-bottom: 1px dotted #95bed8;
 	outline: none;
 }
 
@@ -858,13 +860,15 @@ ul.social li {
 }
 
 .footer-visitsedona {
-	
+	width: 141px;
+}
+
+.hashtag-visitsedona {
+	word-wrap: break-word;
 }
 
 .footer-social,
 ul.social {
-	
-	height: 48px;
  	width: 152px;
  	padding: 0;
  	margin: 0;
@@ -872,7 +876,6 @@ ul.social {
 
 .footer-social ul {
 	list-style: none;
-	margin-left: px;
 }
 
 ul.social li {
@@ -891,16 +894,16 @@ ul.social li {
 	height: 48px;
 	padding: 0;
 	margin: 0;
-	
+	margin-right: 1px;
 }
 
-.social li:first-child {
+/*.social li:first-child {
 	margin-right: 2px;
 }
 
 .social li:nth-child(2) {
 	margin-right: 3px;
-}
+}*/
 
 .social-button {
 	width: 46px;
@@ -928,6 +931,7 @@ ul.social li {
 }
 
 .footer-copyright {
+	width: 90px;
 	font-weight: 400;
 	margin-bottom: 12px;
 }
@@ -939,7 +943,7 @@ ul.social li {
 .button-academy svg {
 	position: absolute;
 	width: 115px;
-	height: 41px;
+
 	left: 985px;
 	top: 39px;
 	margin: auto;
@@ -984,9 +988,7 @@ body {
 
 .main-navigation {
 	background-color: #fff;
-	margin: 0 auto;
 	width: 1056px;
-	 
 }
 
 ul.site-navigation {
@@ -1016,15 +1018,19 @@ ul.site-navigation {
 	padding: 14px 0px 16px 0px;
 }
 
-li.site-fv  {
+.site-navigation li:nth-child(4n+1) {
+	margin-left: 72px;
+}
+
+.site-navigation li:nth-child(4n+2) {
 	margin-left: 147px;
 }
 
-li.site-map {
+.site-navigation li:nth-child(4n+3) {
 	margin-left: 387px;
 }
 
-li.site-htl {
+.site-navigation li:nth-child(4n+4) {
 	margin-left: auto;
 }
 
@@ -1040,18 +1046,14 @@ li.site-htl {
 	width: 138px;
 }
 
-.sedona-advantages {
-	margin-top: 0px;
-	margin-bottom: 51px;
-}
-
 .sedona-advantages p{
-	width: 445px;
-	height: 50px;
 	margin: 0 auto;
 	padding-top: 60px;
-	padding-bottom: 29px;
+	padding-bottom: 28px;
 	line-height: 1em;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
 	letter-spacing: 0.1px;
 }
 
@@ -1122,7 +1124,7 @@ li.site-htl {
 }
 
 .advantages-item .item-white-words span {
-	
+	width: 60px;
 }
 
 .advantages-item .town-img {
@@ -1156,7 +1158,6 @@ li.site-htl {
 
 li.feauters-item {
 	background-color: white;
-	height: 330px;
 }
 
 .advantages-list ul {
@@ -1183,7 +1184,8 @@ li.feauters-item {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	width: 400px;
-	height: 256px;
+	padding-bottom: 4px;
+    padding-top: 5px;
 }
 
 
@@ -1246,16 +1248,19 @@ li.feauters-item {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	width: 400px;
+
 }
 
 .feauters-item img.house {
-	
+	padding-top: 60px;
 }
 
 .feauters-item h3.house {
+	width: 80px;
 	font-size: 21px;
 	margin: 27px 0px 21px 0px;
 	margin-right: 1px;
+	word-wrap: break-word;
 }
 
 .feauters-item p.house {
@@ -1267,6 +1272,8 @@ li.feauters-item {
 	margin-right: 1px;
 	letter-spacing: 0.08px;
 	line-height: 21px;
+	word-wrap: break-word;
+	padding-bottom: 59px;
 }
 
 .feauters-item img.eat {
@@ -1274,8 +1281,10 @@ li.feauters-item {
 }
 
 .feauters-item h3.eat {
+	width: 44px;
 	font-size: 21px;
 	margin: 28px 0px 21px 0px;
+	word-wrap: break-word;
 }
 
 .feauters-item p.eat {
@@ -1294,10 +1303,12 @@ li.feauters-item {
 }
 
 .feauters-item h3.gift {
+	width: 110px;
 	font-size: 21px;
 	margin: 27px 0px 21px 0px;
 	letter-spacing: 0.15px; 
 	margin-left: 1px;
+	word-wrap: break-word;
 }
 
 .feauters-item p.gift {
@@ -1327,7 +1338,7 @@ li.feauters-item {
 	width: 320px;
 	margin: 0;
 	line-height: 21px;
-	padding-bottom: 13px;
+	padding-bottom: 15px;
 }
 
 .item-white-words h3.bridge {
@@ -1336,7 +1347,7 @@ li.feauters-item {
 }
 
 .item-white-words span.bridge {
-	width: 100%;
+	width: 60px;
 	margin: 21px 0px 19px 0px;
 	font-weight: 400;
 }
@@ -1347,16 +1358,18 @@ li.feauters-item {
 	line-height: 21px;
 	padding-bottom: 15px;
 	letter-spacing: 0.02px;
+	
 }
 
 .advantages-feauters-item h3.area {
 	font-size: 21px;
 	line-height: 21px;
-	margin-top: 45px;
+	margin-top: 43px;
 	margin-right: 1px;
 	margin-bottom: 18px;
 	letter-spacing: 0.1px;
 	width: 123px;
+	word-wrap: break-word;
 }
 
 .advantages-feauters-item span.area {
@@ -1364,6 +1377,8 @@ li.feauters-item {
 	font-weight: 400;
 	margin-bottom: 1px;
 	margin-right: 1px;
+	padding-bottom: 5px;
+    padding-top: 1px;
 }
 
 .advantages-feauters-item p.area {
@@ -1376,11 +1391,12 @@ li.feauters-item {
 .advantages-feauters-item h3.road {
 	font-size: 21px;
 	line-height: 21px;
-	margin-top: 45px;
+	margin-top: 41px;
 	margin-left: 2px;
 	margin-bottom: 18px;
 	letter-spacing: 0.4px;
 	width: 123px;
+	word-wrap: break-word;
 }
 
 .advantages-feauters-item span.road {
@@ -1401,11 +1417,12 @@ li.feauters-item {
 .advantages-feauters-item h3.tourist {
 	font-size: 21px;
 	line-height: 21px;
-	margin-top: 45px;
+	margin-top: 40px;
 	margin-left: 2px;
 	margin-bottom: 18px;
 	letter-spacing: 0.1px;
 	width: 123px;
+	word-wrap: break-word;
 }
 
 .advantages-feauters-item span.tourist {
@@ -1603,11 +1620,17 @@ li.feauters-item {
 
 }
 
+.arrival,
+.departure {
+	height: auto;
+}
+
 .date-form {
 	margin-right: auto;
 	margin: 0;
 	padding-top: 6px;
 	letter-spacing: 0.2px;
+	width: 100px;
 }
 
 .search-input {
@@ -1676,13 +1699,17 @@ li.feauters-item {
 }
 
 .adults-label {
+	width: 77px;
 	padding-right: 41px;
 	padding-bottom: 1px;
+	word-wrap: break-word;
 }
 
 .children-label {
+	width: 45px;
 	padding-right: 26px;
-	padding-bottom: 1px
+	padding-bottom: 1px;
+	word-wrap: break-word;
 }
 
 .children-group {
@@ -1827,10 +1854,15 @@ input[type=number] {
 	cursor: pointer;
 }
 
+.button-search span {
+	width: 75px;
+}
+
 .container {
 	width: 975px;
-	height: 120px;
 	margin-left: 132px;
+	padding-top: 34px;
+    padding-bottom: 30px;
 }
 
 .container-flex {
@@ -1857,13 +1889,12 @@ input[type=number] {
 .footer-htmlacademy span {
 	margin-right: auto;
 	margin-top: 10px;
+	margin-right: 10px;
 }
-
 
 .main-footer {
 	position: absolute;
 	width: 1200px;
-	height: 120px;
 	z-index: 9;
 	opacity: 0.9;
 	bottom: 0;

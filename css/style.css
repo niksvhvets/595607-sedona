@@ -1688,17 +1688,15 @@ li.feauters-item {
 }
 
 input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-ms-inner-spin-button, 
-input[type=number]::-ms-outer-spin-button { 
-  -webkit-appearance: none; 
-      -ms-appearance: none;
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
   margin: 0; 
 }
 
 input[type=number] {
     -moz-appearance: textfield;
 }
+
 
 .button-minus {
 	position: relative;

@@ -37,7 +37,7 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
 
   -webkit-clip-path: inset(100%);
-
+  	 -moz-clip-path: inset(100%);
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -355,7 +355,6 @@ input[type="radio"].visually-hidden {
 	width: 30px;
 	height: 32px;
 	margin-left: 58px;
-
 	font-weight: 400;
 }
 
@@ -447,8 +446,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-
 .type-name {
 	font: inherit;
 	font-weight: 400;
@@ -533,6 +530,7 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	color: #cacaca;
 	-webkit-text-decoration: underline dotted #95bed8;
+	-ms-text-decoration: underline dotted #95bed8;
 	        text-decoration: underline dotted #95bed8;
 	outline: none;
 	cursor: pointer;
@@ -949,10 +947,12 @@ ul.social li {
 
 .button-academy:hover path {
 	fill: #81b3d2;
+	-ms-fill: #81b3d2;
 }
 
 .button-academy:active path {
 	fill: #bdbbbc;
+	-ms-fill: #bdbbbc;
 }
 
 /*----- Сеточные стили ------*/
@@ -1688,9 +1688,16 @@ li.feauters-item {
 }
 
 input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-ms-inner-spin-button, 
+input[type=number]::-ms-outer-spin-button { 
   -webkit-appearance: none; 
+      -ms-appearance: none;
   margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .button-minus {
@@ -1846,6 +1853,7 @@ input[type=number]::-webkit-outer-spin-button {
 	display: flex;
 	width: 200px;
 }
+
 .footer-htmlacademy span {
 	margin-right: auto;
 	margin-top: 10px;

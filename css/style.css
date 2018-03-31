@@ -962,8 +962,6 @@ html {
 	width: 1200px;
 	/*min-height: 2762px;*/
 	margin: 0 auto;
-	-webkit-box-shadow: 0px 10px 15px 2px #dbdbdb;
-	        box-shadow: 0px 10px 15px 2px #dbdbdb;
 }
 
  div {
@@ -974,6 +972,14 @@ html {
 body {
 	position: relative;
 }
+
+.box-shadow {
+    max-width: 1206px;
+  	margin: auto;
+  	box-shadow:
+  	-webkit-box-shadow: 0px 10px 15px 2px #dbdbdb;
+	        box-shadow: 0px 10px 15px 2px #dbdbdb;
+ }
 
 .main-header {
 	position: relative;

@@ -1,11 +1,10 @@
 var link = document.querySelector(".button-search-hotels");
 var popup = document.querySelector(".search-hotels-wrapper");
-
+popup.classList.remove("search-hotels-wrapper");
 
 var form = document.querySelector("form");
 var arrival = popup.querySelector("[name=arrival]");
 var departure = popup.querySelector("[name=departure]");
-
 
 link.addEventListener("click", function(event) { 
   event.preventDefault(); 

@@ -244,7 +244,7 @@ input[type="radio"].visually-hidden {
 .search-input:focus {
 	border: 2px solid #e5e5e5;
 	background-color: #fff;
-	padding-left: 10px;
+	padding-left: 11px;
 }
 
 /*----- body hotels -----*/
@@ -1335,13 +1335,104 @@ li.feauters-item {
 	letter-spacing: 0.05px;
 }
 
-
 .search-hotels {
 	max-width: 568px;
 	max-height: 481px;
 	margin: auto;
 }
 
+.search-hotels-wrapper {
+	position: absolute;
+	max-width: 458px;
+	background-color: white;
+	display: none;
+	transition: all 0.3s ease-in;
+	padding: 30px 55px 55px 55px;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0, 0.2);
+}
+
+.search-hotels-wrapper-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  70% {
+    transform: translateY(10px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.search-hotels-wrapper-error {
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-direction: 0.6s;
+	animation-direction: 0.6s;
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
+}
+
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+/*
 .search-hotels-wrapper {
 	position: absolute;
 	display: block;
@@ -1360,9 +1451,9 @@ li.feauters-item {
 	background-color: white;
 
 	-webkit-box-shadow: 0 2px 20px 0 rgba(0,0,0, 0.2);
-
-	box-shadow: 0 2px 20px 0 rgba(0,0,0, 0.2);
 	opacity: 0;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0, 0.2);
+	opacity: ;
 	-webkit-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
@@ -1433,7 +1524,7 @@ li.feauters-item {
 		-webkit-transform: translateX(10px);
 		transform: translateX(10px);
 	}
-}
+}*/
 
 .map {
 	background-image: url('../img/map.jpg');

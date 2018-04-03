@@ -1,6 +1,6 @@
 var link = document.querySelector(".button-search-hotels");
 var popup = document.querySelector(".search-hotels-wrapper");
-popup.classList.remove("search-hotels-wrapper");
+popup.style.display = 'none';
 
 var form = document.querySelector("form");
 var arrival = popup.querySelector("[name=arrival]");
@@ -9,6 +9,7 @@ var departure = popup.querySelector("[name=departure]");
 link.addEventListener("click", function(event) { 
   event.preventDefault(); 
   popup.classList.toggle("search-hotels-wrapper-show");
+  popup.style.display = 'block';
   arrival.focus();
 });
 

@@ -823,6 +823,10 @@ ul.social li {
 	fill: #88b6d1;
 }
 
+.social-button a {
+	height: 100%;
+}
+
 .footer-copyright {
 	width: 90px;
 	font-weight: 400;
@@ -971,7 +975,6 @@ ul.site-navigation {
 	padding: 0;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	background-color: red;
 }
 
 .advantages-item {
@@ -1483,6 +1486,7 @@ li.feauters-item {
 
 .map {
 	background-image: url('../img/map.jpg');
+	background-color: #c3ecb2;
 	z-index: 1;
 	height: 593px;
 }

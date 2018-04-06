@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 
 .sedona-advantages {
 	background-color: #fff;
-	width: 495px;
+	width: 515px;
 	margin-top: 0;
 	margin: auto;
 	margin-bottom: 50px;
@@ -136,7 +136,6 @@ input[type="radio"].visually-hidden {
 }
 
 .interesting {
-	text-align: center;
 	background-color: #fff;
 }
 
@@ -157,6 +156,7 @@ input[type="radio"].visually-hidden {
 }
 
 .interesting-info {
+	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333;
@@ -1515,7 +1515,7 @@ li.feauters-item {
 }
 
 .date-arrival {
-	width: 92px;
+	width: 110px;
 	margin-right: auto;
 	margin: 0;
 	padding-top: 6px;
@@ -1523,7 +1523,7 @@ li.feauters-item {
 }
 
 .date-departure {
-	width: 97px;
+	width: 110px;
 	margin-right: auto;
 	margin: 0;
 	padding-top: 6px;
@@ -1608,8 +1608,8 @@ li.feauters-item {
 }
 
 .adults-label {
-	width: 72px;
-	padding-right: 41px;
+	width: 83px;
+	padding-right: 29px;
 	padding-bottom: 1px;
 	word-wrap: break-word;
 	margin: auto;
@@ -1737,6 +1737,7 @@ input[type=number] {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	align-items: center;
 }
 
 .search-button-form {
